@@ -10,7 +10,7 @@ Game class which will contain the main loop
 Which handles events, call window clears/presents and renders
 : Needs constructor which needs a pointer to the window and player
 : The header file for this class will need includes to nearly all headers as it is responsible for making sure different classes can work together
-: Class should hold pointer arrays to rects and lines
+: ~Class should hold pointer arrays to rects and lines~ POST-CODE: moved to raycaster class
 : Loop will call a function which will go through these arrays to draw everything
 
 There should be a class for the window,
@@ -27,6 +27,6 @@ Player class
 : Getters and setters for those values
 : Possibly also methods of calculating certain things, e.g. how much to rotate when the turn key is pressed
 
-Header file for all math related functions
-: Ya like trigonometry?  
+Header file for all math related functions(POST CODE: didn't happened)
+: Ya like math?  
 
