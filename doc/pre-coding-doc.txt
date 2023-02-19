@@ -1,0 +1,32 @@
+# Plans for garbage raycasting
+incompetence meets programming
+
+## General idea
+
+Main function won't do much besides some basic setup
+It'll kick off the main loop with a function call
+
+Game class which will contain the main loop
+Which handles events, call window clears/presents and renders
+: Needs constructor which needs a pointer to the window and player
+: The header file for this class will need includes to nearly all headers as it is responsible for making sure different classes can work together
+: Class should hold pointer arrays to rects and lines
+: Loop will call a function which will go through these arrays to draw everything
+
+There should be a class for the window,
+: Constructor to create window + renderer
+: Relevant getters/setters
+: Render function to draw something to the renderer. Needs a parameter to determine what's being rendered, e.g. rect, line, point etc
+
+Raycasting class
+: Makes a map
+: Creates the pointer arrays that the game class needs 
+
+Player class
+: Values like position and direction
+: Getters and setters for those values
+: Possibly also methods of calculating certain things, e.g. how much to rotate when the turn key is pressed
+
+Header file for all math related functions
+: Ya like trigonometry?  
+
